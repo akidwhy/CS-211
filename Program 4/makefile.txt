@@ -1,0 +1,8 @@
+main: file.o file2.o
+	gcc -o main file.o file2.o
+
+file.o: file.c header.h
+	gcc -c file.c
+
+file2.o: file2.c header.h
+	gcc -c file2.c
